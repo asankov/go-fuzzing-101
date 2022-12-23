@@ -85,7 +85,9 @@ This will protect us from introducing this bug into our codebase again in the fu
 
 ## Fix the code and rerun the example
 
-Now that we have fixed the code to not `panic` in this case, let's rerun the fuzz test:
+We [fixed the code](https://github.com/asankov/go-fuzzing-101/commit/cf9dda299d05bd20fd29684ad1f4d38cb2067adf) to not `panic` in this case.
+
+Let's rerun the fuzz test:
 
 ```console
 $ go test -fuzz=.
