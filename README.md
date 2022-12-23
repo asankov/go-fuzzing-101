@@ -83,4 +83,4 @@ It also saved that input into the `testdata/fuzz/FuzzDontPanic/a840957b7c9ea08cd
 That means that every time you run this test it will automatically use these values, because it already knows that they trigger a failure.
 This will protect us from introducing this bug into our codebase again in the future.
 
-To make sure this works properly checkout the `v2` branch where the bug is fixed and rerun the fuzz test to see its passing.
+To make sure this works properly checkout the [`v2`](https://github.com/asankov/go-fuzzing-101/tree/v2) branch where the bug is fixed and rerun the fuzz test to see its passing.
