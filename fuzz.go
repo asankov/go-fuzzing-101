@@ -1,5 +1,7 @@
 package fuzz
 
+import "log"
+
 // DontPanic is a function that panics if provided with the input "fuzz".
 //
 // The checks are written in a way that a fuzzing library (like the one present in the Go standard library)
@@ -10,7 +12,8 @@ func DontPanic(s string) {
 			if s[1] == 'u' {
 				if s[2] == 'z' {
 					if s[3] == 'z' {
-						panic("error: wrong input")
+						// don't panic in this case, just log a warning
+						log.Println("[WARNING] error: wrong input")
 					}
 				}
 			}
