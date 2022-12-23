@@ -84,3 +84,12 @@ That means that every time you run this test it will automatically use these val
 This will protect us from introducing this bug into our codebase again in the future.
 
 To make sure this works properly checkout the [`v2`](https://github.com/asankov/go-fuzzing-101/tree/v2#fix-the-code-and-rerun-the-example) branch where the bug is fixed and rerun the fuzz test to see its passing.
+
+## References
+
+These example are based on two great talks I watched on the subject:
+
+- [Fuzzing in Go by Valentin Deleplace, Devoxx Belgium 2022](https://www.youtube.com/watch?v=Zlf3s4EjnFU)
+- [Write applications faster and securely with Go by Cody Oss, Go Day 2022](https://www.youtube.com/watch?v=aw7lFSFGKZs)
+
+Check them out if you want to learn more about fuzzing.
